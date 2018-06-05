@@ -1,0 +1,34 @@
+<resources>
+
+    <!--place movieDB API here-->
+    <string name="API_KEY" translatable="false"></string>
+    <!--place youtube player api here-->
+    <string name="Youtube_Player_Config" translatable="false"></string>
+
+
+
+    <string name="app_name" translatable="false">Popular Movies</string>
+    <string name="contentDescription" translatable="false">CD</string>
+    <string name="ReleaseDate" translatable="true">Release Date:</string>
+    <string name="SORTING_ORDER_KEY" translatable="false">SORTING_ORDER_KEY</string>
+    <string name="DEFAULT_SORTING_ORDER" translatable="false">POPULAR</string>
+    <string name="SORTING_ORDER_POPULAR" translatable="false">POPULAR</string>
+    <string name="SORTING_ORDER_TOP_RATED" translatable="false">TOP_RATED</string>
+    <string name="SORTING_ORDER_FAVOURITES" translatable="false">FAVOURITES</string>
+    <string name="API" translatable="false">api_key</string>
+    <string name="BASE_API" translatable="false">http://api.themoviedb.org/3/movie/</string>
+    <string name="SORTING_BY_POPULAR_API" translatable="false">http://api.themoviedb.org/3/movie/popular?</string>
+    <string name="SORTING_BY_RATING_API" translatable="false">http://api.themoviedb.org/3/movie/top_rated?</string>
+    <string name="RECYCLER_STATE_KEY" translatable="false">RecyclerState</string>
+    <string name="SNACKBAR_STATE_KEY" translatable="false">SnackState</string>
+    <string name="Snack1" translatable="true">welcome to popular movies..</string>
+    <string name="Snack2" translatable="true">your place for finding the best movies out there!</string>
+
+
+    <string name="POPUP_TITLE">Change sorting type</string>
+    <string name="POPUP_POPULAR_KEY">Popular</string>
+    <string name="POPUP_TOP_RATED_KEY">Top rated</string>
+    <string name="POPUP_FAVOURITES_KEY">Favourites</string>
+
+
+</resources>

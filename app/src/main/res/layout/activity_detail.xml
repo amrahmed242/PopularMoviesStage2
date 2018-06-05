@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/detail"
+    tools:context="com.nanodegree.android.popularmovies.Activities.DetailActivity">
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="470dp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--&gt;-->
+
+
+
+        <com.flaviofaria.kenburnsview.KenBurnsView
+            android:id="@+id/Detail_poster"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"/>
+
+
+        <!--<ImageView-->
+            <!--android:id="@+id/Detail_poster"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:contentDescription="@string/contentDescription"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--/>-->
+
+    <!--</ScrollView>-->
+
+
+
+    <ImageView
+        android:id="@+id/Detail_background"
+        android:layout_width="match_parent"
+        android:layout_height="204dp"
+        android:layout_alignParentBottom="true"
+        android:adjustViewBounds="true"
+        android:background="@drawable/banner"
+        android:contentDescription="@string/contentDescription"
+        android:cropToPadding="false"
+        android:scaleType="fitXY"/>
+
+
+    <TextView
+        android:id="@+id/Detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_above="@+id/Detail_Frag"
+        android:layout_alignParentStart="true"
+        android:fontFamily="@font/bebas"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colorAccent" />
+
+    <RelativeLayout
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Detail_title"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout">
+
+        <ImageView
+            android:id="@+id/Detail_rating_background"
+            android:layout_width="90dp"
+            android:layout_height="66dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="2dp"
+            android:contentDescription="@string/contentDescription"
+            app:srcCompat="@drawable/ratingl"/>
+
+        <TextView
+            android:id="@+id/Detail_rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/Detail_rating_background"
+            android:layout_marginTop="10dp"
+            android:alpha=".9"
+            android:fontFamily="@font/bebas"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="36sp"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/Detail_Frag"
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:layout_marginBottom="53dp"
+        android:layout_alignParentBottom="true"
+        >
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/Detail_Trailers"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@+id/Detail_background"
+        android:layout_alignStart="@+id/Detail_IMDB"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:alpha="0"
+        android:clickable="false"
+        android:contentDescription="@string/contentDescription"
+        app:srcCompat="@drawable/trailers"/>
+
+    <ImageView
+        android:id="@+id/Detail_Reviews"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@+id/Detail_background"
+        android:layout_alignEnd="@+id/Detail_IMDB"
+        android:clickable="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:alpha="0"
+        android:contentDescription="@string/contentDescription"
+        app:srcCompat="@drawable/reviews"/>
+
+    <ImageView
+        android:id="@+id/Detail_IMDB"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@+id/Detail_background"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:contentDescription="@string/contentDescription"
+        app:srcCompat="@drawable/imdb"/>
+
+    <Button
+        android:id="@+id/Detail_favorite"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/Detail_background"
+        android:layout_alignParentEnd="true"
+        android:alpha=".5"
+        android:background="@drawable/favicon" />
+
+
+</RelativeLayout>
+
+</layout>

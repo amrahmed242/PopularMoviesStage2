@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/Detail_Release_Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="3dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="@font/bebas"
+        android:textColor="@android:color/background_light"
+        android:textSize="12sp"/>
+
+    <ScrollView
+        android:id="@+id/Scroll_Description"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/Detail_Release_Date"
+        >
+
+        <TextView
+            android:id="@+id/Detail_Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/beb"
+            android:paddingEnd="5dp"
+            android:paddingStart="10dp"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light"
+            android:textSize="12sp"/>
+
+    </ScrollView>
+
+
+</RelativeLayout>
+
+</layout>
