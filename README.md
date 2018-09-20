@@ -5,8 +5,8 @@ Second project for the Udacity Android Developer Nanodegree.
 
 ## Screenshots
 ![Image](screenshots/splash.png) ![Image](screenshots/main.png)
-![Image](screenshots/detail.png) ![Image](screenshots/settings.png)
-![Image](screenshots/trailers.png) ![Image](screenshots/player.png)
+![Image](screenshots/detail.png) ![Image](screenshots/trailers.png)
+![Image](screenshots/player.png) ![Image](screenshots/settings.png)
 
 ## Platform
 Android OS
